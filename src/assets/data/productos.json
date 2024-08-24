@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nombre": "Coca Cola",
+        "tipo": "bebidas",
+        "precio": 1.50
+    },
+    {
+        "id": 2,
+        "nombre": "Helado de Vainilla",
+        "tipo": "postres",
+        "precio": 3.00
+    },
+    {
+        "id": 2,
+        "nombre": "tartar de atún",
+        "tipo": "entrada",
+        "precio": 3.00
+    }
+]

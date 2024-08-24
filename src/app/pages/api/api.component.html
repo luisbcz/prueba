@@ -1,0 +1,9 @@
+<h2>Elementos de API Externa</h2>
+
+<div class="card" *ngFor="let elemento of elementos">
+  <img [src]="elemento.imagen" alt="Imagen del elemento">
+  <h2>{{ elemento.nombre }}</h2>
+  <p>Ciudad: {{ elemento.ciudad }}</p>
+  <p>Precio: {{ elemento.precio }}</p>
+</div>
+

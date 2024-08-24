@@ -1,0 +1,28 @@
+<h2>Gestión de Productos</h2>
+
+<label for="buscar">Buscar por ID:</label>
+<input type="number" id="buscar" [(ngModel)]="searchId">
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Tipo</th>
+      <th>Precio</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of buscarProducto()">
+      <td>{{ producto.id }}</td>
+      <td>{{ producto.nombre }}</td>
+      <td>{{ producto.tipo }}</td>
+      <td>{{ producto.precio }}</td>
+      <td>
+        <button (click)="editarProducto(producto.id)">Editar</button>
+        <button (click)="eliminarProducto(producto.id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

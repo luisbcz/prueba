@@ -1,0 +1,28 @@
+<h2>Productos</h2>
+
+<label for="tipo">Filtrar por Tipo:</label>
+<select id="tipo" [(ngModel)]="filtroTipo">
+  <option value="">Todos</option>
+  <option value="bebidas">Bebidas</option>
+  <option value="postres">Postres</option>
+  <option value="entrada">Entrada</option>
+</select>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Tipo</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of filtrarProductos()">
+      <td>{{ producto.id }}</td>
+      <td>{{ producto.nombre }}</td>
+      <td>{{ producto.tipo }}</td>
+      <td>{{ producto.precio }}</td>
+    </tr>
+  </tbody>
+</table>
